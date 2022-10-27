@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 /*
  * @Author WQL-KXJ
  * @ProjectName WebPageCollect
@@ -19,6 +21,9 @@ public class KXJLoginController {
 
     @Autowired
     GetCodeRedis getCodeRedis;
+
+    @Autowired
+    HttpServletRequest request;
 
     @GetMapping("/login")
     public String Getlogin(){
@@ -37,6 +42,16 @@ public class KXJLoginController {
             return ResponseBeanCode.success(userid);
         }
         return ResponseBeanCode.error();
+    }
+
+    @GetMapping("/logout")
+    public String logout(){
+
+        request.getSession().removeAttribute("userentity");
+
+        request.removeAttribute("dateline");
+
+        return "login";
     }
 
 }

@@ -17,7 +17,7 @@
              alt="" width="72" height="72"  style="border-radius: 15%;">
         <h1 class="h3 mb-3 fw-normal">阅读收藏 - 空想家smile</h1>
 
-        <img src="/images/kxjweix.jpg" alt="公众号：Java问答社">
+        <img src="/images/kxjweix.jpg" alt="公众号：空想家Smile">
         <div class="mt-2 mb-2 text-muted">
             <form class="form-inline">
                 <div class="form-group">
@@ -27,7 +27,7 @@
                 <button type="button" id="sub" class="btn btn-primary">登录</button>
             </form>
         </div>
-        <p class="text-muted">扫码关注公众号，获取验证码登录</p>
+        <p class="text-muted">扫码关注公众号，输入验证码即可获取</p>
     </form>
 </main>
 
@@ -54,7 +54,6 @@
                 alert("未知错误");
             }
         });
-
         })
 
 </script>

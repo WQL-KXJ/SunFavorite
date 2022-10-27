@@ -9,8 +9,11 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/sidebars.css" rel="stylesheet">
     <link href="/css/headers.css" rel="stylesheet">
+    <link href="/css/bootstrap-fileinput.css" rel="stylesheet">
+    <script src="/js/bootstrap-fileinput.js"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/layui/layui.all.js"></script>
 
     <style type="text/css">

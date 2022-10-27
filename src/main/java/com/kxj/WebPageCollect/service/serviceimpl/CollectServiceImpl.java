@@ -16,6 +16,7 @@ import javax.persistence.criteria.*;
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
@@ -105,7 +106,7 @@ public class CollectServiceImpl implements CollectService {
     @Override
     public void save(CollectEntity collect) {
         if (collect.getId()==null) {
-            collect.setCollectedtime(LocalDateTime.now());
+            collect.setCollectedtime(LocalTime.now());
             collect.setCollecteddate(LocalDate.now());
 
             collectRepsitory.save(collect);

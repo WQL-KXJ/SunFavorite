@@ -1,6 +1,6 @@
 server:
   port: 8888 #端口号
-  domain:  http://w3rdua.natappfree.cc
+  domain:  http://u58e5j.natappfree.cc
 
 spring:
   #应用名称
@@ -10,8 +10,8 @@ spring:
   #MySQL数据源的配置
   datasource:
     username: root
-    password: 123
-    url: jdbc:mysql://localhost:3306/webpagecollect?useUnicode=true&characterEncoding=utf8
+    password: admin
+    url: jdbc:mysql://192.168.68.134:3306/webpagecollect?useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.jdbc.Driver
 
     #druid连接池的配置
@@ -47,6 +47,14 @@ spring:
     suffix: .ftl #后缀 默认是ftlh
     settings:
       classic_compatible: true #解决空值问题
+  #Elasticsearch Template
+  elasticsearch:
+    uris: 192.168.68.134:9200
+    username:
+    password:
+    repositories:
+      enabled: true
+
 
 #微信配置
 wx:
@@ -54,3 +62,9 @@ wx:
     app-id: wx6a30f2fade8f3161
     secret: dd1a2bd39408b6afdc630bf5aa9cdac9
     token: kxjwang123
+
+
+#自定义ES配置
+ES:
+  host: 192.168.68.134
+  port: 9200

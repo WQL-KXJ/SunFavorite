@@ -1,7 +1,7 @@
 <header class="p-3 mb-3 border-bottom">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
                 <img src="/images/mainlogo.png" alt="dailyhub" height="38px">
             </a>
 
@@ -13,8 +13,9 @@
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="/search" method="get">
+                <input type="hidden" name="userId" value="${userId}">
                 <input name="q" id="keyword" type="search" class="form-control" placeholder="搜索..."
-                       aria-label="Search">
+                       aria-label="Search" value="${q}">
             </form>
 
 
@@ -22,13 +23,13 @@
             <div class="dropdown text-end">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/images/logo.png"
+                    <img src="${Session["userentity"].avater}"
                          alt="mdo" width="32" height="32" class="rounded-circle">
-                    <span>空想家Smile</span>
+                    <span>${Session["userentity"].username}</span>
                 </a>
                 <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                     <li><a class="dropdown-item" href="/collect/edit">新建收藏</a></li>
-                    <li><a class="dropdown-item" href="#">个人中心</a></li>
+                    <li><a class="dropdown-item" href="/persopnal">个人中心</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>

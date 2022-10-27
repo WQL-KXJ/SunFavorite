@@ -6,6 +6,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 /*
  * @Author WQL-KXJ
@@ -43,6 +45,6 @@ public class CollectEntity implements Serializable {
     private LocalDate collecteddate;
 
     @Column(name = "collectedtime")
-    private LocalDateTime collectedtime;
+    private LocalTime collectedtime;
 
 }

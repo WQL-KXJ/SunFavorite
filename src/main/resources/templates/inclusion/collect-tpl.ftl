@@ -15,7 +15,7 @@
                 <p class="card-text text-muted">
 
                     <a href="/collmenu/{{item.user.id}}">
-                        <img src="{{ item.user.avatar }}" alt="mdo" width="32" height="32"
+                        <img src="{{item.user.avater}}" alt="mdo" width="32" height="32"
                              class="rounded-circle">
                         <span>{{ item.user.username }}</span>
                     </a>

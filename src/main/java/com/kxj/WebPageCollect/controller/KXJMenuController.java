@@ -1,6 +1,7 @@
 package com.kxj.WebPageCollect.controller;
 
 import com.kxj.WebPageCollect.ATO.CollectAto;
+import com.kxj.WebPageCollect.annotation.Login;
 import com.kxj.WebPageCollect.entity.UserEntity;
 import com.kxj.WebPageCollect.repsitory.collectRepsitory;
 import com.kxj.WebPageCollect.repsitory.userRepsitory;
@@ -33,6 +34,7 @@ public class KXJMenuController {
     @Autowired
     HttpServletRequest request;
 
+
     @RequestMapping("/menu/{userid}")
     public String menu(@PathVariable("userid") String userid){
 
@@ -52,6 +54,7 @@ public class KXJMenuController {
         return "mainmenu";
     }
 
+    @Login
     @RequestMapping("/collmenu/{id}")
     public String collmenu(@PathVariable("id") Integer id){
 

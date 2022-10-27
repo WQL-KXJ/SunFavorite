@@ -67,6 +67,7 @@
                         laytpl(gettpl).render(res.data, function (html) {
                             // $("#masonry").append(html);
                             $(".layui-flow-more").before(html);
+
                         })
                         next(lis.join(''), page < res.tolalPages);
                     })

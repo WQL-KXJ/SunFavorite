@@ -1,5 +1,6 @@
 package com.kxj.WebPageCollect.controller;
 
+import com.kxj.WebPageCollect.annotation.Login;
 import com.kxj.WebPageCollect.entity.CollectEntity;
 import com.kxj.WebPageCollect.entity.UserEntity;
 import com.kxj.WebPageCollect.exceptions.collException;
@@ -31,6 +32,7 @@ public class EditController {
     @Value("${server.domain}")
     String domain;
 
+    @Login
     @GetMapping("/collect/edit")
     public String getedit(CollectEntity collectEntity){
 

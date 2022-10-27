@@ -111,4 +111,10 @@ class WebPageCollectApplicationTests {
 	}
 
 
+	@Test
+	public void  d(){
+
+		System.out.println(RandomUtil.randomString(6));
+	}
+
 }

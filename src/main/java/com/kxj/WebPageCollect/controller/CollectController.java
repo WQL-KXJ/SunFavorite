@@ -66,16 +66,6 @@ public class CollectController {
     }
 
 
-    @RequestMapping("/collects/square")
-    public ResponseBeanCode square(@RequestParam("page") Integer page,
-                                   @RequestParam("size") Integer size){
 
-        PageRequest pages = PageRequest.of(page-1, size);
-
-        Page<CollectEntity> collectsqare = collectService.collectsqare(pages);
-
-        return ResponseBeanCode.success(collectsqare.getContent());
-
-    }
 
 }

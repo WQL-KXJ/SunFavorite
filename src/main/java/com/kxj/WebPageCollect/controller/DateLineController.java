@@ -1,6 +1,7 @@
 package com.kxj.WebPageCollect.controller;
 
 import com.kxj.WebPageCollect.ATO.ResponseBeanCode;
+import com.kxj.WebPageCollect.annotation.Login;
 import com.kxj.WebPageCollect.entity.CollectEntity;
 import com.kxj.WebPageCollect.service.CollectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class DateLineController {
     @Autowired
     CollectService collectService;
 
+    @Login
     @RequestMapping("/collectflow/{userId}/{dateline}")
     @ResponseBody
     public ResponseBeanCode userCollects(@PathVariable(name = "userId") Integer userid,
