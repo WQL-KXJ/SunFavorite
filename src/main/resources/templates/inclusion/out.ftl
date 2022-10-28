@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>${title}</title>
-
     <link rel="stylesheet" href="/layui/css/layui.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/sidebars.css" rel="stylesheet">
@@ -15,7 +14,7 @@
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/layui/layui.all.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
     <style type="text/css">
         [v-cloak] {
             display: none !important;

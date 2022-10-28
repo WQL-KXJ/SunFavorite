@@ -114,7 +114,10 @@ class WebPageCollectApplicationTests {
 	@Test
 	public void  d(){
 
-		System.out.println(RandomUtil.randomString(6));
+		String s= "/api/file/wql.txt";
+		String substring = s.substring(s.lastIndexOf("/")+1);
+		System.out.println(substring);
+
 	}
 
 }

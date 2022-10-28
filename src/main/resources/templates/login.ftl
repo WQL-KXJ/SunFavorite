@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>用户登录 - 空想家</title>
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.icon">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/signin.css" rel="stylesheet">
     <script src="/js/jquery-3.6.0.min.js"></script>

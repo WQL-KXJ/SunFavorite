@@ -5,6 +5,7 @@ import com.kxj.WebPageCollect.entity.UserEntity;
 import com.kxj.WebPageCollect.repsitory.userRepsitory;
 import com.kxj.WebPageCollect.service.PersopnalCenterService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +24,9 @@ import java.io.IOException;
 @Service
 public class PersopnalCenterServiceImpl implements PersopnalCenterService {
 
+    @Value("${file.uploadFolder}")
+    private String uploadFolder;
+
     @Autowired
     userRepsitory userRepistory;
 
@@ -38,35 +42,35 @@ public class PersopnalCenterServiceImpl implements PersopnalCenterService {
         //获取文件后缀
         String substring = originalFilename.substring(originalFilename.lastIndexOf("."));
 
-        //获取路径
-        String path = ClassUtils.getDefaultClassLoader().getResource("").getPath() + "static/images/";
-
         String filepath = RandomUtil.randomString(8)+substring;
 
-        File newfile = new File(path+filepath);
+        File newfile = new File(uploadFolder+filepath);
 
         //删除原有文件
         DelOldImage(userentity);
 
-        userentity.setAvater("/images/"+filepath);
+        userentity.setAvater("/api/file/"+filepath);
 
         //更新
         userRepistory.save(userentity);
 
         oldfile.transferTo(newfile);
 
-        return "/images/"+filepath;
+        return "/api/file/"+filepath;
     }
 
     //删除修改前的image
     public Boolean DelOldImage(UserEntity userentity){
         Boolean a=false;
 
-        //获取路径
-        String path = ClassUtils.getDefaultClassLoader().getResource("").getPath() + "static/";
+        //获取地址
+        String avater = userentity.getAvater();
+
+        //获取文件名即可
+        String filename =avater.substring(avater.lastIndexOf("/")+1);
 
         //删除原有的文件
-        File olefile = new File(path+userentity.getAvater());
+        File olefile = new File(uploadFolder+filename);
 
         if(olefile.exists()){
             a = olefile.delete();

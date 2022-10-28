@@ -1,6 +1,6 @@
 server:
   port: 8888 #端口号
-  domain:  http://u58e5j.natappfree.cc
+  domain: http://u58e5j.natappfree.cc
 
 spring:
   #应用名称
@@ -19,11 +19,10 @@ spring:
       max-active: 1500 #最大使用连接数量
       max-wait: 50000 #最大等待时间
       min-idle: 0 #最小空闲时间
-
   #Redis的配置
   redis:
     port: 6379
-    host: 127.0.0.1
+    host: 192.168.68.134
     database: 0
     jedis:
       pool:
@@ -54,7 +53,12 @@ spring:
     password:
     repositories:
       enabled: true
-
+  #文件上传配置
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      enabled: true
+      max-request-size: 10MB
 
 #微信配置
 wx:
@@ -63,8 +67,12 @@ wx:
     secret: dd1a2bd39408b6afdc630bf5aa9cdac9
     token: kxjwang123
 
-
 #自定义ES配置
 ES:
   host: 192.168.68.134
   port: 9200
+
+#静态主要映射
+file:
+  staticAccessPath: /api/file/**
+  uploadFolder: F:\KXJPageCollect\static\teamImages\
