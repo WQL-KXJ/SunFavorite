@@ -26,7 +26,28 @@
 3. 使用Natapp做内网穿透进行测试
 4. 修改前端的二维码
 
+**Natapp内网穿透和公众号设置博客🚕：**[点击进入](https://wql.luoqin.ltd/2022/10/29/sunfavorite%e9%a1%b9%e7%9b%ae%e8%bf%90%e8%a1%8c/)
 
+**修改application.yml：只列非常规设置，连接信息省略**
+```yml
+server:
+  #设置为服务的IP地址或者内网穿透域名
+  domain: http://u58e5j.natappfree.cc
+wx:
+  mp:
+    #设置微信公众开发者ID和Token信息
+    app-id: wxxx
+    secret: wxxx
+    token: wxxx
+file:
+  #文件上传映射地址
+  staticAccessPath: /api/file/**
+  #在指定地址创建目录
+  uploadFolder: F:\KXJPageCollect\static\teamImages\
+#其他就是redis,mysql,ES地址，这里省略
+``` 
+## 4. 项目演示图
+1，项目
 
 
 
