@@ -46,7 +46,7 @@ file:
   uploadFolder: F:\KXJPageCollect\static\teamImages\
 #其他就是redis,mysql,ES地址，这里省略
 ``` 
-## 4. 项目演示图
+## 4. 项目演示图🌌
 1，项目
 
 
