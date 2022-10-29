@@ -51,22 +51,27 @@ file:
 
 ![登录页](https://img-blog.csdnimg.cn/f2620057860242d9a36cb83e428db6ee.png#pic_center "登录页")
 
-2, 个人收藏
+2, 公众号获取验证码
+
+![公众号获取验证码](https://img-blog.csdnimg.cn/c890f8a714ca4a66b17a7fff684a754b.png#pic_center "公众号获取验证码")
+
+
+3, 个人收藏
 
 ![个人收藏](https://img-blog.csdnimg.cn/d0570ad1d77e4f92819b5c6bf066cb7f.png#pic_center "个人收藏")
 
-3, 公共收藏(点击他人名称可以进入他的收藏空间，但只显示公开的收藏目录)
+4, 公共收藏(点击他人名称可以进入他的收藏空间，但只显示公开的收藏目录)
 
 ![公共收藏](https://img-blog.csdnimg.cn/d5f20f84ce224070b89ab7d49c1e186d.png#pic_center "公共收藏")
 
-4, 新建收藏
+5, 新建收藏
 
 ![新建收藏](https://img-blog.csdnimg.cn/b70f13d885c74eaab67e853c66914d90.png#pic_center "新建收藏")
 
-5, 收藏搜索(收藏名称和收藏备注都可以)
+6, 收藏搜索(收藏名称和收藏备注都可以)
 
 ![收藏搜索](https://img-blog.csdnimg.cn/5afb271cbd194acca4be1f9bc1890dda.png#pic_center "收藏搜索")
 
-6, 个人中心
+7, 个人中心
 
 ![个人中心](https://img-blog.csdnimg.cn/f53493e5c0f24a93a697b2e77f45f20a.png#pic_center "个人中心")
