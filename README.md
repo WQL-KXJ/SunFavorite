@@ -49,12 +49,11 @@ file:
 ## 4. 项目演示图🌌
 1, 登录页
 
-![登录页](https://img-blog.csdnimg.cn/f2620057860242d9a36cb83e428db6ee.png#pic_center "登录页")
+![登录页](https://wql.luoqin.ltd/wp-content/uploads/2022/11/%E7%99%BB%E5%BD%95.png "登录页")
 
 2, 公众号获取验证码
 
 ![公众号获取验证码](https://img-blog.csdnimg.cn/c890f8a714ca4a66b17a7fff684a754b.png#pic_center "公众号获取验证码")
-
 
 3, 个人收藏
 
